@@ -1,0 +1,8 @@
+.navbar {
+    background-color: #b9d4e7;
+}
+
+.navbar-brand{
+    flex: 1;
+    text-align: center;
+}
