@@ -47,6 +47,9 @@ export class PainelComponent implements OnInit {
       // atualiza o objeto rodadaFrase
       this.rodadaFrase = this.frases[this.rodada]
 
+      //limpar a resposta
+      this.resposta = ''
+
     } else {
       alert('A tradução está errada')
     }
