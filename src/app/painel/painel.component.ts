@@ -45,6 +45,11 @@ export class PainelComponent implements OnInit {
       // progresso
       this.progresso = this.progresso + (100 / this.frases.length)
 
+      //
+      if (this.rodada === 4){
+        alert('Concluiu as traduções com sucesso')
+      }
+
       // atualiza o objeto rodadaFrase
       this.atualizaRodada()
 
@@ -53,7 +58,7 @@ export class PainelComponent implements OnInit {
       // diminuir a variável tentativas
       this.tentativas--
       if(this.tentativas === -1) {
-        alert('Você perdeu todas as tentaivas')
+        alert('Você perdeu todas as tentativas')
       }
     }
       
