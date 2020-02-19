@@ -50,6 +50,7 @@ export class PainelComponent implements OnInit, OnDestroy {
 
       // progresso
       this.progresso = this.progresso + (100 / this.frases.length)
+      console.log(this.progresso)
 
       //fluxo de sucesso tradução das frases
       if (this.rodada === 4){
