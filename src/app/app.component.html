@@ -4,7 +4,7 @@
 <app-painel (encerrarJogo)="encerrarJogo($event)"></app-painel>
 </div>
 <ng-template #fimDeJogo>
-    <div class="container">
+    <div *ngIf="encerramento === 'derrota'; else fimDeJogoVitoria" class="container">
         <div class="jumbotron">
             <div class="row d-flex justify-content-center">
                     Fim de Jogo. Você Perdeu!
@@ -12,3 +12,14 @@
         </div>
     </div>
 </ng-template>
+<ng-template #fimDeJogoVitoria>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row d-flex justify-content-center">
+                    Você ganhou!
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+
