@@ -7,7 +7,10 @@
     <div *ngIf="encerramento === 'derrota'; else fimDeJogoVitoria" class="container">
         <div class="jumbotron">
             <div class="row d-flex justify-content-center">
-                    Fim de Jogo. Você Perdeu!
+                <div class="col">
+                    <h3> Fim de Jogo. Você Perdeu! </h3>
+                    <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
+                </div>
             </div>
         </div>
     </div>
@@ -15,8 +18,11 @@
 <ng-template #fimDeJogoVitoria>
     <div class="container">
         <div class="jumbotron">
-            <div class="row d-flex justify-content-center">
-                    Você ganhou!
+            <div class="row d-flex justify-content -center">
+                <div class="col">
+                    <h3>Você ganhou! </h3>
+                    <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
+                </div>
             </div>
         </div>
     </div>

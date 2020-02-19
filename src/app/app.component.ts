@@ -16,4 +16,10 @@ export class AppComponent {
     this.encerramento = tipo
   }
 
+  public reiniciarJogo(): void {
+    this.jogoEmAndamento = true
+    this.encerramento = undefined
+    
+  }
+
 }
