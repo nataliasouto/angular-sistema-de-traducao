@@ -1,7 +1,6 @@
 # Sistema de Tradução feito em Angular
 Sistema utilizando o framework Angular para tradução de frases em inglês. </br>
 Este projeto foi criado com o Angular 8</br>
-<i>** Sistema em andamento **</i>
 
 ### Tecnologias
 Angular 8</br>
