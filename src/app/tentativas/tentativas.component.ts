@@ -31,7 +31,7 @@ export class TentativasComponent implements OnInit, OnChanges {
     }
 
 
-    console.log('tentaivas recebidas do painel:', this.tentativas)
+    console.log('tentativas recebidas do painel:', this.tentativas)
 
   }
 
